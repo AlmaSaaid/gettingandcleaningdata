@@ -1,0 +1,41 @@
+```{r}
+title: "CodeBook"
+author: "F Alma S"
+date: "Friday, October 14, 2016"
+output: html_document
+```
+
+
+```{r}
+
+Below is the summary on the run_analysis.R produced for Getting and Cleaning Data project
+
+Read all of the files from downloaded UCI tables
+
+- Activity file consists of Y.train and Y.test variables
+- Subject file: subject.train and subject.test
+- Feature file: X.train and X.test  
+
+Merge all of these three datasets.
+- train and test: row binding
+- the three datasets: column bindings
+- combined.all is the dataframe of the merged dataset
+
+Get the mean and SD
+- features.mean.sd is variable name to get the names of features
+- combined.all.new is the new dataframe with appropriate column names
+
+Get the activity names
+- activity.name is variable name to get the names of activity
+- then insert the name in combined.all.new dataframe
+
+Change the column names to meaningful ones
+- check in the features_info.txt from UCI data
+
+Create a tidy dataset
+- melted.combined variable is called to form a dataset based on subject and activity
+- tidy.combined variable to create a new dataframe with the average
+
+
+Done!
+```
